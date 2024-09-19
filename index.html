@@ -8,9 +8,10 @@
     <script src="./js/app.js" defer></script>
 </head>
 <body>
-    <h1>NBA FANTASY 2014-2024</h1>
+    <header><h1>NBA FANTASY 2014-2024</h1></header>
+    
     <section class="My-Team">
-        <h3>My Fantasy Team</h3>
+        <h2>My Fantasy Team</h2>
             <div class="my-players">
                 <div class="player-div" id="pg">
                     <p class="role-name">Point Guard</p>
@@ -36,7 +37,7 @@
     </section>
 
     <section class="search-form">
-        <h3>NBA Player Search</h3>
+        <h2>NBA Player Search</h2>
         <select name="select-role" id="select-role-id">
             <option value="PG">PG</option>
             <option value="SG">SG</option>
@@ -45,9 +46,9 @@
             <option value="C">C</option>
         </select>
         
-        <input type="range" id="pointsInput" name="pointsInput" min="0" max="20000" value="1" oninput="pointsAmount.innerText=this.value"><span id="pointsAmount">Points</span>
-        <input type="range" id="twoPercentInput" name="twoPercentInput" min="0" max="100" value="1" oninput="twoAmount.innerText=this.value"><span id="twoAmount"></span>2P%</input>
-        <input type="range" id="threePercentInput" name="threePercentInput" min="0" max="100" value="1" oninput="threeAmount.innerText=this.value"><span id="threeAmount">3P%</span></input>
+        <input type="range" id="pointsInput" name="pointsInput" min="0" max="20000" value="1" oninput="pointsAmount.innerText='Points: '+this.value"><span id="pointsAmount">Points</span></input>
+        <input type="range" id="twoPercentInput" name="twoPercentInput" min="0" max="100" value="1" oninput="twoAmount.innerText='2-Pointers: ' + this.value + '%'"><span id="twoAmount">2-Pointers: </span></input>
+        <input type="range" id="threePercentInput" name="threePercentInput" min="0" max="100" value="1" oninput="threeAmount.innerText='3-Pointers: ' + this.value + '%'"><span id="threeAmount">3-Pointers: </span></input>
         <button id="search-btn">Search Player</button>
 
         <div class="results-table">

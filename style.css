@@ -8,9 +8,17 @@ body {
     align-items: center;
 }
 
-h1, h3 {
-    color: #333;
+h3, h2 {
+    color: darkblue;
     text-align: center;
+}
+
+header{
+    text-align: center;
+    color: #f0f0f0;
+    background-color: darkblue;
+    width: 100vh;
+    min-width: 100%;
 }
 
 .My-Team, .search-form, .results-table {
@@ -50,7 +58,7 @@ h1, h3 {
 .role-name {
     font-weight: bold;
     margin-bottom: 10px;
-    color: #555;
+    color: darkblue;
 }
 
 .player-info {
@@ -95,18 +103,23 @@ h1, h3 {
 
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse:collapse;
+    
 }
 
 th, td {
     padding: 12px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid #ddd;
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 1px ;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: rgba(231, 80, 80, 0.896);
     font-weight: bold;
+    color: #ffffff;
 }
 
 .add-player {
