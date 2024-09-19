@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f7fb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h3 {
+    color: #333;
+    text-align: center;
+}
+
+.My-Team, .search-form, .results-table {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.my-players {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.player-div {
+    flex: 0 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    min-width: 200px;
+    max-width: calc(20% - 20px);
+    margin: 10px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s;
+    box-sizing: border-box;
+}
+
+.player-div:hover {
+    transform: translateY(-5px);
+}
+
+.role-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.player-info {
+    min-height: 50px;
+}
+
+.player-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.player-stats {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-form select, .search-form input[type="range"], .search-form button {
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+}
+
+.search-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.add-player {
+    padding: 5px 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-player:hover {
+    background-color: #007B9A;
+}
+
+
