@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         PF: document.getElementById("pf"),
         C: document.getElementById("c"),
     };
+    // functions
     const searchPlayers = async () => {
         const searchInfo = {
             position: selectPositionElm.value,
@@ -70,7 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
             tableBody.appendChild(row);
         });
     };
-    searchButton.addEventListener("click", searchPlayers);
     const addPlayerToTeam = (player) => {
         const playerDiv = playerDivs[player.position];
         if (playerDiv) {
@@ -106,4 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Player div not found for position", player.position);
         }
     };
+    // search button event listener
+    searchButton.addEventListener("click", searchPlayers);
 });

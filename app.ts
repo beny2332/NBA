@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     C: document.getElementById("c")!,
   };
 
+  // interfaces
   interface reqBody {
     position: string;
     twoPercent: number;
@@ -35,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
     playerName: string;
   }
 
+  // functions
   const searchPlayers = async (): Promise<void> => {
     const searchInfo: reqBody = {
       position: selectPositionElm.value,
@@ -105,8 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  searchButton.addEventListener("click", searchPlayers);
-
   const addPlayerToTeam = (player: resBody): void => {
     const playerDiv = playerDivs[player.position];
     if (playerDiv) {
@@ -148,4 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Player div not found for position", player.position);
     }
   };
+
+  // search button event listener
+  searchButton.addEventListener("click", searchPlayers);
 });
